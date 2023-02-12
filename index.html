@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Bend Base</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;600&family=Inter:wght@100;400&family=Josefin+Sans:wght@100;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Хэдэр. Начало-->
+
+    <header class="header">
+
+        <div class="header__wrap">
+            <div class="header__logotype">
+                <a href="#" class="header__logo logo">
+                    <img src="images/logo.png" alt="Full Bend Base">
+                </a>
+            </div>
+
+            <div class="header__menu-right">
+                <div class="header__contacts">
+                    <ul class="header__contacts-items">
+                        <li class="header__contacts-item">09:00-24:00</li>
+                        <li class="header__contacts-item">+7(929)04х-15-48</li>
+                        <li class="header__contacts-item">
+                            <a class="header__contacts-link" href="#">г.Нижний Новгород, м. Канавинская</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <input id="toggle" type="checkbox"></input>
+
+                <label for="toggle" class="hamburger">
+                    <div class="top-bun"></div>
+                    <div class="meat"></div>
+                    <div class="bottom-bun"></div>
+                </label>
+
+
+                <div class="header__menu">
+                    <nav class="header__menu-list">
+                        <ul class="header__menu-items">
+                            <li class="header__menu-item"><a href="#promo">АКЦИИ</a></li>
+                            <li class="header__menu-item"><a href="#about-studio">О СТУДИИ</a></li>
+                            <li class="header__menu-item"><a href="#rooms">КОМНАТЫ</a></li>
+                            <li class="header__menu-item"><a href="#vocal">ЗАПИСЬ ВОКАЛА</a></li>
+                            <li class="header__menu-item"><a href="#price">ТАРИФЫ</a></li>
+                            <li class="header__menu-item"><a href="#news">НОВОСТИ</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </div>
+
+
+    </header>
+    <!--Конец Хэдэра-->
+
+    <!--Banner-->
+    <section class="banner">
+
+        <h1 class="banner__inner-title"> Full Bend Base - место для творчества и тебя</h1>
+
+    </section>
+    <!-- /.banner-->
+
+
+
+    <!-- Акции. Начало -->
+    <section class="promo__section">
+
+        <div class="promo container">
+            <h2>
+                <a name=promo></a>
+                Акции
+            </h2>
+            <div class="promotions">
+                <div class="promo__item">
+                    <div class="super5">
+                        <h3 class="promo__title">ДЛЯ СОЗДАНИЯ ТВОЕГО ХИТА</h3>
+                        <div class="super5__item">
+                            <p class="promo__text">SUPER FIVE<br><br>СКИДКА 30%<br>5 ЧИСЛА<br>КАЖДОГО МЕСЯЦА</p>
+                            <form action="form.html">
+                                <!-- <button class="promo-btn">ПОДРОБНЕЕ</button> -->
+                                <a class="promo-btn" href="#blackout">ПОДРОБНЕЕ</a>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div id="blackout">
+                        <div id="modal-window">
+                            <a href="#!" class="close-window">ЗАКРЫТЬ</a>
+                            <p class="form__title">Введите имя и номер телефона, чтобы связаться<br> с менеджером</p>
+                            <form class="form" action="/" method="post">
+                                <input class="username" type="text" id="username" name="username" value="Ваше имя"><br>
+                                <input class="telephone" type="tel" id="user-tel" name="user-tel" value="+7"><br><br>
+                                <input class="btn__form" type="submit" value="Жду звонка">
+                                <div class="contact-form-input"><span class="rdd"><input type="checkbox" value="on"
+                                            onchange="document.getElementById('submit').disabled = !this.checked" /></span>Cогласен
+                                    с <a title="Правила политики конфиденциальности сайта" href="#"
+                                        rel="nofollow noopener noreferrer"
+                                        onclick="return !window.open(this.href)">политикой
+                                        конфиденциальности</a></div><br />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="promo__item">
+                    <div class="bonus__card">
+                        <h3 class="promo__title">БОНУСНАЯ КАРТА</h3>
+                        <div class="bonus__card-item">
+                            <p class="promo__text">ДЛЯ НАКОПЛЕНИЯ<br>БОНУСНЫХ БАЛЛОВ</p>
+                            <img class="bonus__card-image" src="./images/discount-card.png" alt="Бонусная карта">
+                            <form action="form.html">
+                                <a class="promo-btn" href="#blackout">ПОДРОБНЕЕ</a>
+                            </form>
+                        </div>
+
+                        <div id="blackout">
+                            <div id="modal-window">
+                                <a href="#!" class="close-window">ЗАКРЫТЬ</a>
+                                <p class="form__title">Введите имя и номер телефона, чтобы связаться<br> с менеджером
+                                </p>
+                                <form class="form" action="/" method="post">
+                                    <input class="username" type="text" id="username" name="username"
+                                        value="Ваше имя"><br>
+                                    <input class="telephone" type="tel" id="user-tel" name="user-tel"
+                                        value="+7"><br><br>
+                                    <input class="btn__form" type="submit" value="Жду звонка">
+                                    <div class="contact-form-input"><span class="rdd"><input type="checkbox" value="on"
+                                                onchange="document.getElementById('submit').disabled = !this.checked" /></span>Cогласен
+                                        с <a title="Правила политики конфиденциальности сайта" href="#"
+                                            rel="nofollow noopener noreferrer"
+                                            onclick="return !window.open(this.href)">политикой
+                                            конфиденциальности</a></div><br />
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="promo__item">
+                    <div class="seventh__free">
+                        <h3 class="promo__title">БОЛЬШЕ ПРАКТИКИ, ЭТО ВЫГОДНО!</h3>
+                        <div class="seventh__free-item">
+                            <p class="promo__text">ПРИ АРЕНДЕ КОМНАТЫ<br>НА 6 ЧАСОВ<br>7-Й ЧАС В ПОДАРОК</p>
+                            <form action="form.html">
+                                <!-- <button class="promo-btn">ПОДРОБНЕЕ</button> -->
+                                <a class="promo-btn" href="#blackout">ПОДРОБНЕЕ</a>
+                            </form>
+                        </div>
+
+                        <div id="blackout">
+                            <div id="modal-window">
+                                <a href="#!" class="close-window">ЗАКРЫТЬ</a>
+                                <p class="form__title">Введите имя и номер телефона, чтобы связаться<br> с менеджером
+                                </p>
+                                <form class="form" action="/" method="post">
+                                    <input class="username" type="text" id="username" name="username"
+                                        value="Ваше имя"><br>
+                                    <input class="telephone" type="tel" id="user-tel" name="user-tel"
+                                        value="+7"><br><br>
+                                    <input class="btn__form" type="submit" value="Жду звонка">
+                                    <div class="contact-form-input"><span class="rdd"><input type="checkbox" value="on"
+                                                onchange="document.getElementById('submit').disabled = !this.checked" /></span>Cогласен
+                                        с <a title="Правила политики конфиденциальности сайта" href="#"
+                                            rel="nofollow noopener noreferrer"
+                                            onclick="return !window.open(this.href)">политикой
+                                            конфиденциальности</a></div><br />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="promo-item">
+                    <div class="gift">
+                        <h3 class="promo__title">ПОДАРОЧНЫЙ СЕРТИФИКАТ </h3>
+                        <div class="gift__item">
+                            <img class="gift__logo-image" src="./images/gift-logo.png" alt="Full Bend Base">
+                            <img class="gift__ribbon-image" src="./images/gift-ribbon.png" alt="Подарочный сертификат">
+                            <form action="form.html">
+                                <!-- <button class="promo-btn">ПОДРОБНЕЕ</button> -->
+                                <a class="promo-btn" href="#blackout">ПОДРОБНЕЕ</a>
+                            </form>
+                        </div>
+
+                        <div id="blackout">
+                            <div id="modal-window">
+                                <a href="#!" class="close-window">ЗАКРЫТЬ</a>
+                                <p class="form__title">Введите имя и номер телефона, чтобы связаться<br> с менеджером
+                                </p>
+                                <form class="form" action="/" method="post">
+                                    <input class="username" type="text" id="username" name="username"
+                                        value="Ваше имя"><br>
+                                    <input class="telephone" type="tel" id="user-tel" name="user-tel"
+                                        value="+7"><br><br>
+                                    <input class="btn__form" type="submit" value="Жду звонка">
+                                    <div class="contact-form-input"><span class="rdd"><input type="checkbox" value="on"
+                                                onchange="document.getElementById('submit').disabled = !this.checked" /></span>Cогласен
+                                        с <a title="Правила политики конфиденциальности сайта" href="#"
+                                            rel="nofollow noopener noreferrer"
+                                            onclick="return !window.open(this.href)">политикой
+                                            конфиденциальности</a></div><br />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--Акции. Конец-->
+
+    <!--О нас. Начало-->
+    <section class="about">
+
+        <div class="about__content">
+            <p class="about__content--title">
+                <a name=about-studio></a>
+                О нашей студии
+            </p>
+            <p class="about__content--text"><span>Репетиционная база (репбаза) Full Bend Base - это<br>репетиционная
+                    база нового поколения. репетиционная база<br>расположена в непосредственной близости от
+                    станции<br>метро Горьковская на 6 этаже бизнес-центра "Молодая<br>гвардия". Общая площадь комплекса
+                    репетиционной базы<br>120 кв.м. Проектом предусмотрено 3 репетиционных<br>комнат площадью от 18 до
+                    25 кв.м, оборудованных<br>системой кондиционирования, а так же акустическая<br>вокальная кабина
+                    IzoCab Mega.</span></p>
+
+        </div>
+
+    </section>
+    <!--О нас. Конец-->
+
+    <!-- Наши комнаты. Начало -->
+    <section class="rooms__section">
+
+        <h4 class="rooms__title">
+            <a name=rooms></a>
+            Наши комнаты
+        </h4>
+        <p class="rooms__suptitle">Для самостоятельных и групповых репетиций</p>
+        <div class="rooms">
+            <div class="rooms__items">
+                <div class="rooms__item">
+                    <div class="room1">
+                        <div class="room1__item">
+                            <h5 class="room__title">Комната 1</h5>
+                            <p class="room__footage">25 кв.м</p>
+                            <div class="more-rooms">
+                                <a href="#room1" class="rooms__button">ПОДРОБНЕЕ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="room1">
+                        <div id="modal-room1">
+                            <a href="#!" class="close-window">ЗАКРЫТЬ</a>
+                            <img class="room__img" src="./images/room1.png" alt="">
+                            <div class="room__about">
+                                <p class="modal__title">Первая Комната</p>
+                                <p class="room__text">Микрофоны Shure SM58</p>
+                                <p class="room__text">Активная акустическая система YAMAHA MSR250</p>
+                                <p class="room__text">Активный сабвуфер Dynacord A 118A</p>
+                                <p class="room__text">Пассивная акустическая система Dynacord A115</p>
+                                <p class="room__text">Усилитель для бас-гитары TRACE ELLIOT AH600-7 HEAD</p>
+                                <p class="room__text">Усилитель гитарный ORANGE Rockerverb 100 ламповый</p>
+                                <p class="room__text">Гитарный кабинет ORANGE PPC412C</p>
+                                <p class="room__text">Гитарный усилитель MARSHALL JCM900 4100 100W DUAL REVERB VALVE
+                                    AMPLIFIER ламповый</p>
+                                <p class="room__text">Гитарный кабинет MARSHALL 1960A 300W 4X12</p>
+                                <p class="room__text">Ударная установка DW PDP Concept</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rooms__item">
+                    <div class="room2">
+                        <div class="room2__item">
+                            <h5 class="room__title">Комната 2</h5>
+                            <p class="room__footage">20 кв.м</p>
+                            <div class="more-rooms">
+                                <a href="#room2" class="rooms__button">ПОДРОБНЕЕ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="room2">
+                        <div id="modal-room2">
+                            <a href="#!" class="close-window">ЗАКРЫТЬ</a>
+                            <img class="room__img" src="./images/room2.png" alt="">
+                            <div class="room__about">
+                                <p class="modal__title">Вторая комната</p>
+                                <p class="room__text">Гитарный стэк Crate BV120H Blue Voodoo + 4×12 Crate cab (100
+                                    ватт)
+                                </p>
+                                <p class="room__text">Гитарный стэк Peavey 6505 + 4×12
+                                    Peavey cab (100 ватт)</p>
+                                <p class="room__text">Басовый стэк SWR SM900 + 4×10 SWR Goliath cab (900 ватт)</p>
+                                <p class="room__text">Мониторная линия:</p>
+                                <p class="room__text">Активная RCF HD12A (2×400 ватт)</p>
+                                <p class="room__text">Микшер SounCraft EFX12 (12 мик./2 стерео)</p>
+                                <p class="room__text">Барабанная установка: MAPEX M-PRO (cherry fade)BD 22’,</p>
+                                <p class="room__text">Альты 10’,12’,14’,</p>
+                                <p class="room__text">Малый барабан 14’</p>
+                                <p class="room__text">Набор стоек (3 журавля, 1 прямая, хэт, малый барабан, стул)</p>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="rooms__item">
+                    <div class="room3">
+                        <div class="room3__item">
+                            <h5 class="room__title">Комната 3</h5>
+                            <p class="room__footage">18 кв.м</p>
+                            <div class="more-rooms">
+                                <a href="#room3" class="rooms__button">ПОДРОБНЕЕ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="room3">
+                        <div id="modal-room3">
+                            <a href="#!" class="close-window">ЗАКРЫТЬ</a>
+                            <img class="room__img" src="./images/room3.png" alt="">
+                            <div class="room__about">
+                                <p class="modal__title">Третья комната</p>
+                                <p class="room__text">Гитарный стэк Marshall JVM410H + 4х12 Marshall cab (100 ватт)</p>
+                                <p class="room__text">Гитарный стэк Mesa Boogie Triple Rectifier + 4х12 Mesa Boogie
+                                    rectifier cab (150 ватт)</p>
+                                <p class="room__text">Гитарный стэк ENGL Powerball 2 + 4×12 ENGL pro cab (100 ватт)</p>
+                                <p class="room__text">Басовый стэк Trace Elliot AH600-7 + 4×10 Trace Elliot 1048H (600
+                                    ватт)</p>
+                                <p class="room__text">Мониторная линия: FBT PSR 215 + усилитель QSC RMX 4050Микшер Allen
+                                    & Heath ZED 12 FX (6 мик./4
+                                    стерео)</p>
+                                <p class="room__text">Микшер Bexringer Air X18 (цифровой, 16 каналов)</p>
+                                <p class="room__text">Барабанная установка: YAMAHA Maple Custom Absolute (красная)BD
+                                    22’, Альты 8′,10’,12’,13’,16’, 3 малых
+                                    барабана 14’ (стандартный, глубокий, пикколо)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rooms__item">
+                    <div class="room4">
+                        <div class="room4__item">
+                            <h5 class="room__title">Комната 4</h5>
+                            <p class="room__footage">15 кв.м</p>
+                            <div class="more-rooms">
+                                <a href="#room4" class="rooms__button">ПОДРОБНЕЕ</a>
+                            </div>
+                        </div>
+                        <div id="room4">
+                            <div id="modal-room4">
+                                <a href="#!" class="close-window">ЗАКРЫТЬ</a>
+                                <img class="room__img" src="./images/room4.png" alt="">
+                                <div class="room__about">
+                                    <p class="modal__title">Четвертая комната</p>
+                                    <p class="room__text">Микрофоны AKG D5</p>
+                                    <p class="room__text">Линия WHARFEDALE PRO EVP-X215 2*500Вт</p>
+                                    <p class="room__text">Усилитель мощности Alto Mistral 900</p>
+                                    <p class="room__text">Микшерный пульт Behringer XENYX 2222FX</p>
+                                    <p class="room__text">Басовый комбо Peavey TNT 115 - 150 Вт</p>
+                                    <p class="room__text">Усилитель гитарный Marshall MHZ15 ламповый</p>
+                                    <p class="room__text">Гитарный кабинет Marshall MHZ112A, MHZ112B</p>
+                                    <p class="room__text">Гитарный стэк Randall KH120RHS 120 Вт (именная модель Kirk
+                                        Hammett)</p>
+                                    <p class="room__text">Ударная установка Sonor F2007 Stage 2 Piano Black</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Комнаты. КОНЕЦ -->
+
+    <!-- Вокальная комната (Ксюша) -->
+
+    <section class="vocal-banner top-vocal">
+
+        <div class="best-offer-i-l text-white">
+            <h1 class="vocal__title">
+                <a name=vocal></a>
+                Вокальная комната
+            </h1>
+            <div class="vocal-banner-l">
+                <div class="container d-flex flex-sb">
+                    <div class="container  d-flex ">
+
+                        <p class="vocal__text">Акустическая вокальная кабина IzoCab Mega <br>
+                            позволит Вам полноценно заниматься творчеством<br>
+                            и мультимедиа продакшном в правильной <br>
+                            акустике. В кабине есть все для комфортной<br>
+                            работы: мощная звукоизоляция, бесшумная<br>
+                            регулируемая вентиляция, удобная полка для<br>
+                            оборудования, кабель-порт для внешней<br>
+                            коммутации, сетевой фильтр.Для записи вокала<br>
+                            предоставляется легендарный микрофон Shure<br>
+                            sm7b. Либо можете использовать свой<br>
+                            собственный микрофон.
+                        </p>
+                        <img src="./images/room-vocal-mic.png" alt="Вокальная комната">
+                    </div>
+                </div>
+            </div>
+            <div class="container d-flex flex-sb">
+                <div class="top-vocal">
+                    <p class="vocal__text">Shure SM7B - это динамический микрофон, с кардиоидной диаграммой
+                        направленности,
+                        разработанный<br>
+                        на базе капсюля Unidyne III, аналогичного тому, что используется в вокальном микрофоне SM58 и
+                        <br>
+                        инструментальном микрофоне SM57.Также необходимо отметить, что за счёт конструкции
+                        микрофона,<br>
+                        который имеет большую аккустическую площадь за самим капсюлем, данный микрофон имеет <br>
+                        расширенные, по сравнению с SM58 и SM57, характеристики в области низких частот. SM7B имеет <br>
+                        длительную историю, конструкция микрофона была запатентована Shure в 74 году, а первый микрофон
+                        <br>
+                        продан ещё в 73ем.И с тех пор SM7B незаменимый микрофон для звукозаписи. В полной мере его <br>
+                        оценили такие известные исполнители как Майкл Джексон, Джеймс Хэтфилд и несчетное количество
+                        <br>
+                        легендарных звезд!
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <h2 class="vocal__title">Запись вокала в уютной студии <br> звукозаписи в Full Bend Base</h2>
+                <div class="vocal-banner-l">
+                    <div class="container d-flex flex-sb">
+                        <div class="container d-flex ">
+                            <div>
+                                <p class="vocal__text">В стоимость бронирования уже включена <br>
+                                    работа звукорежиссёра. Значит, вы получаете в <br>
+                                    своё распоряжение не только высококлассное<br>
+                                    оборудование и отдельные помещения для<br>
+                                    записи, сведения и мастеринга, но и<br>
+                                    профессионала, готового помочь вам воплотить<br>
+                                    в жизнь все ваши желания<br> <br>
+                                    Стоимость аренды вокальной студии – <span class="text-peach">2 200 руб/час</span>
+                                </p>
+                            </div>
+                            <img src="./images/room-vocal-girl.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Вокальная комната. КОНЕЦ -->
+
+    <!-- Стоимость услуг. НАЧАЛО -->
+
+    <section class="container price">
+
+        <div class="price__heading">
+            <h2 class="price__title">
+                Стоимость услуг
+            </h2>
+            <h3 class="price__subtitle">Стоимость указана на 1 смену = 3 часа</h3>
+        </div>
+        <div class="table">
+            <table class="table__price">
+                <tr class="table__price--orange">
+                    <th>Время работы</th>
+                    <th>Комната 1</th>
+                    <th>Комната 2</th>
+                    <th>Комната 3</th>
+                    <th>Комната 4</th>
+                    </th>
+                    <th>Вокальная комната</th>
+                </tr>
+                <!--ряд с ячейками заголовков-->
+                <tr class="table__price--white">
+                    <td>09:00 - 18:00 <br> Будни</td>
+                    <td>1500 р</td>
+                    <td>1500 р</td>
+                    <td>1500 р</td>
+                    <td>1500 р</td>
+                    <td>1900 р</td>
+                </tr>
+                <!--ряд с ячейками тела таблицы-->
+                <tr class="table__price--lightorange">
+                    <td>18:00 - 00:00 <br> Будни</td>
+                    <td>1700 р</td>
+                    <td>1700 р</td>
+                    <td>1700 р</td>
+                    <td>1700 р</td>
+                    <td>2200 р</td>
+                </tr>
+                <!--ряд с ячейками тела таблицы-->
+                <tr class="table__price--white">
+                    <td>09:00 - 00:00 <br> Выходные/Праздники</td>
+                    <td>1800 р</td>
+                    <td>1800 р</td>
+                    <td>1800 р</td>
+                    <td>1800 р</td>
+                    <td>2200 р</td>
+                </tr>
+                <!--ряд с ячейками тела таблицы-->
+            </table>
+        </div>
+
+    </section>
+    <!--price end-->
+
+    <!--advantages start-->
+    <section class="advantages">
+
+        <h2 class="advantages__title">Наши преимущества</h2>
+        <div class="advantages__menu container">
+            <div class="advantages__heart">
+                <img src="./images/heart.svg" alt="heart">
+                <p class="advantages__text">
+                    Современно <br><br>Комфортный <br> интерьер, уютная <br> атмосфера
+                </p>
+            </div>
+            <div class="advantages__car">
+                <img src="./images/Car.svg" alt="Car">
+                <p class="advantages__text">
+                    Водителям <br><br>Бесплатные <br> парковочные <br> места для наших <br> клиентов
+                </p>
+            </div>
+            <div class="advantages__eye">
+                <img src="./images/Eye.svg" alt="eye">
+                <p class="advantages__text">
+                    Креативно <br>Спектр услуг в рамках <br> одного студийного <br> репетиционного <br> комплекса
+                </p>
+            </div>
+            <div class="advantages__location">
+                <img src="./images/location.svg" alt="location">
+                <p class="advantages__text">
+                    Близко <br><br>300 метров от метро <br> Канавинская
+                </p>
+            </div>
+            <div class="advantages__thumbup">
+                <img src="./images/thumb-up.svg" alt="thumb up">
+                <p class="advantages__text">
+                    Удобно <br><br>Студия работает без <br> выходных и перерыва <br> на обед
+                </p>
+            </div>
+            <div class="advantages__wifi">
+                <img src="./images/wifi.svg" alt="wifi">
+                <p class="advantages__text">
+                    Wi-Fi <br><br>Бесплатный Wi-Fi
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <!--advantages end-->
+
+    <!--news start-->
+
+    <div class="news container ">
+
+        <div class="news__headings">
+            <h2 class="news__tittle">
+                <a name=news></a>
+                Новости
+            </h2>
+            <h3 class="news__suptittle">Будьте в курсе всех событий и новостей</h3>
+        </div>
+        <div class="news__swiper">
+            <swiper-container class="mySwiper" class="mySwiper" pagination="true" pagination-clickable="true"
+                space-between="30" slides-per-view="1">
+                <swiper-slide class="news__swiper--prices">
+                    <img class="news__img" src="./images/prices.png" alt="prices">
+                    <p class="news__text"><strong>Изменение цен 01.11.2022</strong></p>
+                    <p class="news__text">Уважаемые посетители! С 1 ноября 2022
+                        года на репециционной базе действуют
+                        новые цены. Просим Вас подробнее
+                        ознакомиться в разделе "Услуги и цены".
+                    </p>
+                </swiper-slide>
+                <swiper-slide class="news__swiper--shock">
+                    <img class="news__img" src="./images/shock.png" alt="shock">
+                    <p class="news__text"><strong>Новая ударная установка 25.10.2022</strong></p>
+                    <p class="news__text">Приятные новости!На нашей
+                        репетиционной базе "Full Bend Base" Вас
+                        ждет новая ударная установка PDP
+                        Concept от компании DW</p>
+                </swiper-slide>
+                <swiper-slide class="news__swiper--equipment">
+                    <img class="news__img" src="./images/equipment.png" alt="equipment">
+                    <p class="news__text"><strong>Обновление оборудования 11.10.2022</strong></p>
+                    <p class="news__text">Уважаемые друзья!Мы долго этого ждали,
+                        и, вот, теперьу нас установлен новый
+                        пульт Behringer Digital Mixer X32
+                    </p>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+        <!--news end-->
+
+        <!--blog start-->
+        <div class="blog">
+            <h2 class="blog__title">Блог</h2>
+            <div class="blog__advertisement container">
+                <div class="blog__advertisement--rehearsals">
+                    <img src="./images/Rehearsals.png" alt="Rehearsals">
+                    <p>Репетиции</p>
+                    <p>Проведение репетиций братьев Засидкевич</p>
+                </div>
+                <div class="blog__advertisement--recording">
+                    <img src="./images/recording.png" alt="recording">
+                    <p>Звуковая запись</p>
+                    <p>Alexis Tsarkov, 21 октября 2022 г. <br>Legacy - концептуальный альбом</p>
+                </div>
+            </div>
+
+        </div>
+        <!--blog end-->
+
+        <!--map start-->
+        <div class="map container">
+
+            <div class="map__headings">
+                <h2 class="map__title"> Full Bend Base На Карте</h2>
+                <img src="./images/map.svg" alt="map">
+            </div>
+            <div class="map__interactive">
+                <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A88f7e707d1fe8724ef35e9edd4b7bba6708352877431ab3bca6b70eb09abcea3&amp;width=751&amp;height=547&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+
+        </div>
+        <!--map end-->
+
+        <!--footer start-->
+        <footer class="footer">
+
+            <div class="footer__links">
+                <p>© 2022, <a class="footer__link" href="#">Full Bend Base</a> <br> Музыкальная студия</p>
+                <a class="footer__link" href="#">НАШИ КОНТАКТЫ</a>
+                <a class="footer__link" href="#">+7(929)04х-15-48</a>
+                <a class="footer__link" href="#">Время работы: 09:00-00:00, <br>без выходных</a>
+                <a class="footer__link" href="#">Нижний Новгород,<br>м. Канавинская</a>
+            </div>
+
+            <div class="footer__social">
+                <a class="social__link" href="https://instagram.com/armkhi" target="_blank" class="fa fa-inst"><img
+                        src="./images/inst.svg" alt="inst"></a>
+                <a class="social__link" href="https://www.youtube.com/" target="_blank" class="fa fa-you"><img
+                        src="./images/youtube.svg" alt="youtube"></a>
+                <a class="social__link" href="https://twitter.com/share" target="_blank" class="fa fa-twit"><img
+                        src="./images/twit.svg" alt="twit"></a>
+                <a class="social__link" href="https://www.facebook.com/" target="_blank" class="fa fa-face"><img
+                        src="./images/facebook.svg" alt="facebook"></a>
+            </div>
+
+        </footer>
+        <!--footer end-->
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>
